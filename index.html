@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manmed Dynamics</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/icons/logo-icon.jpg" alt="Logo" class="logo-icon" />
+      <div class="logo-text">
+        Manmed <span class="highlight">Dynamics</span><span class="dot">.</span>
+      </div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-content">
+    <h1 data-aos="fade-up">Empowering medicine<br>through the <span class="gradient-text">Brilliance of AI</span></h1>
+    <p data-aos="fade-up" data-aos-delay="200">From robotic surgery to real-time cancer detection, our technologies drive precision and progress.</p>
+    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+      <a href="#projects" class="btn-dark">Get Started Today</a>
+      <a href="#contact" class="btn-light">Join Now</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Technologies Section -->
+  <section id="technologies" class="technologies-section" data-aos="fade-up">
+    <h2 class="section-title">Technologies <span class="gradient-text">We Use</span></h2>
+    <p class="section-subtitle">From sensors to software – bridging medicine and machines.</p>
+
+    <div class="tech-grid">
+      <div class="tech-card" data-aos="zoom-in">
+        <img src="assets/icons/ai-brain.png" alt="AI & ML">
+        <h4>AI & ML</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/icons/robotic-arm.png" alt="Robotics">
+        <h4>Robotics</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/icons/vision.png" alt="Computer Vision">
+        <h4>Computer Vision</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/icons/iot.png" alt="IoT Sensors">
+        <h4>IoT Sensors</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/icons/data.png" alt="Medical Data">
+        <h4>Medical Data</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="assets/icons/ros.png" alt="ROS2">
+        <h4>ROS2</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Our <span class="gradient-text">Projects</span></h2>
+  <p class="section-subtitle">Home / Projects</p>
+
+  <div class="project-grid">
+    <a href="projects/cancer-detection.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/cancer-residual.jpg" alt="Cancer Residual Detection">
+      <div class="project-info">
+        <h3>Cancer Residual Detection</h3>
+        <p>AI Imaging</p>
+      </div>
+    </a>
+
+    <a href="projects/radiology-ai.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/radiology-ai.jpg" alt="Radiology AI System">
+      <div class="project-info">
+        <h3>Radiology AI System</h3>
+        <p>Medical Diagnostics</p>
+      </div>
+    </a>
+
+    <a href="projects/telesurgical-robot.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/telesurgical.jpg" alt="Telesurgical Robot">
+      <div class="project-info">
+        <h3>Telesurgical Robot</h3>
+        <p>Robotic Surgery</p>
+      </div>
+    </a>
+
+    <a href="projects/ophthalmology-ai.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/slitlamp.jpg" alt="AI Slit Lamp">
+      <div class="project-info">
+        <h3>AI Integrated Slit Lamp</h3>
+        <p>Vision + AI</p>
+      </div>
+    </a>
+
+    <a href="projects/patient-series-detector.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/patient-series.jpg" alt="Digital Prescription System">
+      <div class="project-info">
+        <h3>Digital Prescription System</h3>
+        <p>Patient Workflow</p>
+      </div>
+    </a>
+
+    <a href="projects/dermatology-ai.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/dermatology.jpg" alt="Dermatology AI">
+      <div class="project-info">
+        <h3>Dermatology AI</h3>
+        <p>Skin Diagnostics</p>
+      </div>
+    </a>
+
+    <a href="projects/anaesthesia-monitoring-ai.html" class="project-card" data-aos="zoom-in">
+      <img src="assets/images/anaesthesia-ai.jpg" alt="Anaesthesia Monitoring AI">
+      <div class="project-info">
+        <h3>AI Anaesthesia Monitoring System</h3>
+        <p>Surgical Support</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Partner Section -->
+<section id="partners" class="partners-section" data-aos="fade-up">
+  <h2 class="section-title">Our <span class="gradient-text">Partners/MoUs</span></h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollPartners('left')">&#10094;</button>
+
+    <div class="carousel">
+      <div class="partner-logo active">
+        <img src="assets/partners/bmc-logo.png" alt="Partner 1">
+      </div>
+      <div class="partner-logo">
+        <img src="assets/partners/mmc-logo.png" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="assets/partners/mims-logo.png" alt="Partner 3">
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="scrollPartners('right')">&#10095;</button>
+  </div>
+</section>
+
+
+
+<!-- Careers Section -->
+<section id="careers" class="careers-section" data-aos="fade-up">
+  <h2 class="section-title">Join <span class="gradient-text">Our Team</span></h2>
+  <p class="section-subtitle">Home / Careers</p>
+
+  <div class="careers-list">
+    <div class="career-card" data-aos="fade-up">
+      <h3>AI Research Intern</h3>
+      <p>Contribute to machine learning models for medical image analysis and diagnostics.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+
+    <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Frontend Web Developer</h3>
+      <p>Help design and develop user-friendly healthcare interfaces and dashboards.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+
+    <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Medical Advisor</h3>
+      <p>Provide clinical insights and validate AI tools across surgical and diagnostic domains.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="team-section">
+  <h2 class="section-title">Our <span class="gradient-text">Team</span></h2>
+  <p class="section-subtitle">Home / Our Team</p>
+
+  <div class="team-grid fancy-layout">
+    <div class="team-card-glass" data-aos="fade-up">
+      <img src="assets/images/vishwa.jpg" alt="Vishwa">
+      <div class="team-info">
+        <h3>Vishwas Gowda P N</h3>
+        <p>Founder & Robotics Engineer</p>
+      </div>
+    </div>
+
+    <div class="team-card-glass" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/images/nagendra.jpg" alt="Mr. P G Nagendra">
+      <div class="team-info">
+        <h3>Mr. P G Nagendra</h3>
+        <p>Co-Founder</p>
+      </div>
+    </div>
+
+    <div class="team-card-glass" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/images/lingaraju.jpg" alt="Dr. N. Lingaraju">
+      <div class="team-info">
+        <h3>Dr. N. Lingaraju</h3>
+        <p>Neurosurgeon – MIMS</p>
+      </div>
+    </div>
+
+    <div class="team-card-glass" data-aos="fade-up" data-aos-delay="300">
+      <img src="assets/images/narasimhaswamy.jpg" alt="Dr. Narasimhaswamy P">
+      <div class="team-info">
+        <h3>Dr. Narasimhaswamy P</h3>
+        <p>Urologist – MIMS</p>
+      </div>
+    </div>
+
+    <div class="team-card-glass" data-aos="fade-up" data-aos-delay="400">
+      <img src="assets/images/muralidhar.jpg" alt="Dr. Muralidhar Bhatt Y">
+      <div class="team-info">
+        <h3>Dr. Muralidhar Bhatt Y</h3>
+        <p>Pathologist – MIMS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+  <div class="about-container" data-aos="fade-up">
+    <div class="about-text">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        <strong>Manmed Dynamics</strong> is a research-driven medtech company building the next generation of intelligent surgical and diagnostic systems directly from inside hospital operating rooms.
+        Founded by <strong>Vishwa</strong>, a mechatronics engineer and visiting researcher at MIMS, our mission is to bridge the gap between medicine and engineering through human-centered innovation.
+      </p>
+      <p>
+        From detecting microscopic cancer residues to guiding robotic surgeries and interpreting diagnostics with AI — our projects redefine what's possible in medicine.
+        Each system is developed hand-in-hand with doctors and validated in real operating theatres to ensure real-world reliability and clinical relevance.
+      </p>
+      <p>
+        At Manmed Dynamics, we don’t just build prototypes — we engineer intelligence that saves lives.
+      </p>
+      <a href="#team" class="btn-dark">Meet the Team</a>
+    </div>
+    <div class="about-image" data-aos="fade-left">
+      <img src="assets/images/manmed.jpg" alt="Founder of Manmed Dynamics">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section" data-aos="fade-up">
+  <h2 class="section-title">Get in Touch</h2>
+  <p class="section-subtitle">Whether you're a hospital, researcher, or innovator — connect with us or book a direct appointment.</p>
+
+  <div class="contact-appointment-grid">
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <h3>Send us a message</h3>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Calendly Embed -->
+    <div class="calendly-container">
+      <h3>Book Appointment</h3>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/yourusername/30min" style="min-width:320px;height:600px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Brand -->
+    <div class="footer-column">
+      <h3>Manmed Dynamics</h3>
+      <p>Engineering Intelligence from Scratch to Surgery.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/vishwagowda" target="_blank" title="LinkedIn">🔗</a>
+        <a href="https://github.com/Mech-Doctor" target="_blank" title="GitHub">🐳</a>
+        <a href="mailto:manmeddynamics@gmail.com" title="Email">✉️</a>
+      </div>
+    </div>
+
+    <!-- Column 2: Location -->
+    <div class="footer-column">
+      <h3>Location</h3>
+      <p>Mandya Institute of Medical Sciences<br>Mandya, Karnataka, India</p>
+      <p>Office Hours:<br>Mon–Fri: 9:00am – 5:00pm</p>
+    </div>
+
+    <!-- Column 3: Navigation -->
+    <div class="footer-column">
+      <h3>Navigation</h3>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Column 4: Google Maps -->
+    <div class="footer-column footer-map">
+      <h3>Find Us</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.7574021439826!2d76.89762457501758!3d12.520889424184288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafd7bc6b24dc9b%3A0x43d6a9f37df8e0a!2sMandya%20Institute%20Of%20Medical%20Sciences!5e0!3m2!1sen!2sin!4v1689998765013!5m2!1sen!2sin" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Manmed Dynamics. All rights reserved.</p>
+  </div>
+</footer>
